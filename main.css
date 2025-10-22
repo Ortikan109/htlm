@@ -1,0 +1,63 @@
+body {
+  margin-top: 100px;
+}
+
+#mendeleev {
+  position: relative;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.title-table {
+  position: absolute;
+  top: 70px;
+  left: 520px;
+  margin: 0;
+  font-size: 30px;
+}
+
+.text-table {
+  position: absolute;
+  max-width: 580px;
+  text-align: center;
+  left: 550px;
+  top: 90px;
+}
+
+td {
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+}
+
+th {
+  border: 1px solid black;
+  height: 15px;
+  font-size: 12px;
+}
+
+.void {
+  border: none;
+}
+
+.fourth {
+  border: none;
+  padding: 0;  
+}
+
+.star {
+  padding: 0;
+  background-color: rgb(232, 255, 231);  
+}
+
+.pink {
+  background-color: rgb(250, 223, 241);
+}
+
+.blue {
+  background-color: rgb(221, 242, 250);
+}
+
+.yelow {
+  background-color: rgb(255, 250, 227);
+}
