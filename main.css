@@ -2,6 +2,23 @@ body {
   margin-top: 100px;
 }
 
+.tab {
+  position: relative;
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 300px;
+}
+
+.tab-head {
+  position: absolute;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 100px;
+  margin: auto;
+  top: -20px;
+  left: 180px;
+}
+
 #mendeleev {
   position: relative;
   border-collapse: collapse;
@@ -9,20 +26,15 @@ body {
   margin-bottom: 200px;
 }
 
-.title-table {
-  position: absolute;
-  top: 70px;
-  left: 520px;
+.title-table {  
   margin: 0;
   font-size: 30px;
 }
 
-.text-table {
-  position: absolute;
+.text-table { 
   max-width: 580px;
   text-align: center;
-  left: 550px;
-  top: 90px;
+  margin-top: 0;
 }
 
 td {
@@ -68,6 +80,7 @@ th {
 .figur{
   margin-left: 300px;
   margin-right: 300px;
+  margin-bottom: 300px;
 }
 
 .chat {
@@ -107,6 +120,7 @@ th {
   background: linear-gradient(rgb(250, 206, 214), rgb(192, 192, 250));
   overflow-x: hidden;
   scrollbar-width: none;
+  z-index: 1;
 }
 
 .screen::-webkit-scrollbar {
@@ -137,19 +151,23 @@ th {
       top: -25px;
       right: 0;
     }
-    & .shtuchka {
-        position: absolute;
-        border-radius: 30px 0;
-        border-bottom: 15px solid rgb(170, 232, 248);
-        border-left: 5px solid transparent;
-        border-top-color: transparent;
-        width: 20px;
-        height: 10px;
-        transform: rotate(45deg);
-        bottom: -5px;
-        right: -10px;
-    }
 }
+
+.pasha::before {
+  content: '';
+  position: absolute;
+  border-radius: 30px 0;
+  border-bottom: 15px solid rgb(170, 232, 248);
+  border-left: 5px solid transparent;
+  border-top-color: transparent;
+  width: 20px;
+  height: 10px;
+  transform: rotate(45deg);
+  bottom: -5px;
+  right: -10px;
+  z-index: -1;   
+}
+
 
 .masha, .dasha {
   background: linear-gradient(180deg, rgb(201, 250, 238), rgb(170, 232, 248));
@@ -160,20 +178,37 @@ th {
       position: absolute;
       top: -25px;
       left: 0;
-    }
+    }    
+}
 
-    & .shtuchka {
-        position: absolute;
-        border-radius: 30px 0;
-        border-bottom: 15px solid rgb(170, 232, 248);
-        border-left: 5px solid transparent;
-        border-top-color: transparent;
-        width: 20px;
-        height: 10px;
-        transform: rotate(45deg);
-        bottom: -5px;
-        left: -10px;
-    }
+.masha::before {
+  content: '';
+      position: absolute;
+      border-radius: 30px 0;
+      border-bottom: 15px solid rgb(170, 232, 248);
+      border-left: 5px solid transparent;
+      border-top-color: transparent;
+      width: 20px;
+      height: 10px;
+      transform: rotate(45deg);
+      bottom: -5px;
+      left: -10px;
+      z-index: -1;
+}
+
+.dasha::before {
+  content: '';
+      position: absolute;
+      border-radius: 30px 0;
+      border-bottom: 15px solid rgb(170, 232, 248);
+      border-left: 5px solid transparent;
+      border-top-color: transparent;
+      width: 20px;
+      height: 10px;
+      transform: rotate(45deg);
+      bottom: -5px;
+      left: -10px;
+      z-index: -1;
 }
 
 .bottom {
@@ -186,17 +221,6 @@ th {
   background-color: rgb(209, 209, 209);
 }
 
-.shtuchka {
-  display: inline-block;
-  border-radius: 30px 0;
-  border-bottom: 15px solid rgb(170, 232, 248);
-  border-left: 35px solid transparent;
-  border-top-color: transparent;
-  width: 20px;
-  height: 10px;
-  transform: rotate(25deg);
-}
-
 .dob {
   margin: auto;
   margin-bottom: 30px;
@@ -206,4 +230,42 @@ th {
   border: solid 1px transparent;
   background-color: rgba(160, 96, 96, 0.35);
   border-radius: 10px;
+}
+
+
+
+.form {
+  border: solid 2px black;
+  border-radius: 3px;
+  width: 500px;
+  height: 800px;
+  margin: auto;
+  padding: 50px;
+  background-color: rgb(248, 241, 233);
+}
+
+.names {
+  margin-bottom: 15px;
+}
+
+.name-form {
+  border: solid 1px black;
+  border-radius: 3px;
+  width: 220px; 
+  height: 30px;
+  padding-left: 10px; 
+}
+
+.gender {
+  margin-bottom: 15px;
+}
+
+.mail {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.email {
+  width: 480px;
+  height: 20px;
 }
