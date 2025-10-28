@@ -285,38 +285,46 @@
     </div>
   </section>
 
-  <section class="form">
-    <form class="inner-form" action="/Index.html" method="post">
-      <div class="names">
-        <label for="">
-          <input class="name-form" type="text" name="name" placeholder="Введите Имя">
-        </label>
-        <label for="">
-          <input class="name-form" type="text" name="second-name" placeholder="Введите Фамилию">
-        </label>
+
+  <section>
+    <form class="pact" action="/htlm/" method="post">
+      <label><u>Укажите ваше имя</u></label>
+      <label><u>Укажите вашу фамилию</u></label>
+      <input id="name" type="text" name="name" placeholder="Имя">      
+      <input id="name" type="text" name="surname" placeholder="Фамилия">
+      <div class="sex">
+        <label>Муж.</label>
+        <input id="male" type="radio" name="gender" value="male">
+        <label>Жен.</label>
+        <input id="female" type="radio" name="gender" value="female">
       </div>
-      <div class="gender">
-        <label for="">Укажите пол</label>
-        <label for="">
-          <input type="radio" name="gender" value="" >
-          М
-        </label>
-        <label for="">
-          <input type="radio" name="gender" value="" >
-          Ж
-        </label>
-      </div>
-      <div>
-        <label class="mail" for="">Укажите Почту</label>
-        <input class="email" type="email" name="mail" id="" placeholder="person@mail.ru">
-          
-        
-      </div>
+      <label id="title-mail"><u>Укажите почту</u></label>
+      <input id="object-mail" type="email" name="email" placeholder="person@mail.ru">
+      <label><u>Укажите ваш город:</u></label>
+      <select name="person-city" id="city">
+        <option class="citys" value="mockow">Москва</option>
+        <option class="citys" value="st-petersburg">Санкт-Перербург</option>
+        <option class="citys" value="perm">Пермь</option>
+        <option class="citys" value="sochi">Сочи</option>
+        <option class="citys" value="sartavala">Сартавала</option>
+        <option class="citys" value="tula">Тула</option>
+        <option class="citys" value="podolsk">Подольск</option>
+        <option class="citys" value="zelenograd">Зеленоград</option>        
+      </select>
+      <label id="pas"><u>Паспорт</u></label>
+      <label>Серия</label>
+      <label>Номер</label>
+      <input id="ser" type="number" name="ser" placeholder="0000">
+      <input id="number" type="number" name="number" placeholder="000000">
+      <label><u>Ваш коментарий</u></label>
+      <textarea name="comment" id="comment"></textarea>
+      <div></div>
+      <label><u>Отказ от притензий</u></label>
+      <div></div>
+      <input id="file" type="file">
 
     </form>
-
-  </section>
-  
+  </section>  
   
 
 </body>

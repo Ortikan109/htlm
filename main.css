@@ -118,13 +118,9 @@ th {
   padding-top: 25px;
   padding-bottom: 5px;  
   background: linear-gradient(rgb(250, 206, 214), rgb(192, 192, 250));
-  overflow-x: hidden;
-  scrollbar-width: none;
+  overflow: hidden;
+  overflow-y: none;
   z-index: 1;
-}
-
-.screen::-webkit-scrollbar {
-  display: none;
 }
 
 .masha, .pasha, .dasha {
@@ -268,4 +264,105 @@ th {
 .email {
   width: 480px;
   height: 20px;
+}
+
+
+
+/* Форма*/
+
+
+
+
+
+.pact {
+  display: grid;
+  background-color: rgb(228, 217, 212);
+  width: 400px;
+  height: 600px;
+  padding: 20px;
+  margin: auto;
+  border: solid 2px rgb(136, 136, 136);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(15, 30px);
+  align-items: center;
+  gap: 5px;
+}
+
+label {
+  font-size: 19px;
+  text-align: center;
+}
+
+#name {
+  height: 23px;
+  border: solid 2px rgb(151, 151, 151);
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.sex {
+  padding-left: 40px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#title-mail {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#object-mail {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding-left: 10px;
+  height: 23px;
+  border: solid 2px rgb(151, 151, 151);
+  border-radius: 5px;
+}
+
+#city {
+  height: 29px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: solid 2px rgb(151, 151, 151);
+  border-radius: 5px;
+}
+
+.citys {
+  text-decoration: rgb(129, 129, 129);
+}
+
+#pas {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+#ser, #number {
+  height: 23px;
+  padding-left: 10px;
+  border: solid 2px rgb(151, 151, 151);
+  border-radius: 5px;
+
+}
+
+#ser {
+  max-width: 90px;
+  margin: auto;
+}
+
+#comment {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 11;
+  grid-row-end: 14;
+  height: 100%;
+  border: solid 2px rgb(151, 151, 151);
+  border-radius: 5px;
+}
+
+#file {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
