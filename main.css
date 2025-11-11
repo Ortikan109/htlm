@@ -118,8 +118,8 @@ th {
   padding-top: 25px;
   padding-bottom: 5px;  
   background: linear-gradient(rgb(250, 206, 214), rgb(192, 192, 250));
-  overflow: hidden;
-  overflow-y: none;
+  overflow: auto;
+  scrollbar-width: none;
   z-index: 1;
 }
 
